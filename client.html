@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Ejemplo notificacion </title>
+    </head>
+    <body>
+        <div id="container">Cambie el xml para actualizar este contenido</div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script>
+    // creando un nuevo websocket
+      var socket = io.connect('http://locahost');
+      // en cada mensaje recibido se imprimen los datos dentro de #container div
+      socket.on('notification', function (data) {
+        $('#container').html(data.sample);
+        $('time').html('Last Update:' + data.time);
+      });
+    </script>
+    </body>
+</html>
