@@ -4,7 +4,7 @@ RTVC
 Proyecto Node.js
 -------------
 
-EEEste proyecto permite cambiar el contenido de una pagina html por el contenido de un archivo xml. 
+Este proyecto permite cambiar el contenido de una pagina html por el contenido de un archivo xml. 
 Para esto se tiene un servicio web que usa node.js. Este escucha por el puerto 8000, y el cliente crea un websocket y cada vez que recibe un mensaje de respuesta se imprimen los datos en el browser.
 
 Para ejecutar el proyecto se requieren 3 archivos:
